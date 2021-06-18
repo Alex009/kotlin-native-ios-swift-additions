@@ -1,0 +1,4 @@
+language = Objective-C
+package = cocoapods.TestFramework
+modules = TestFramework
+linkerOpts = -framework TestFramework 
