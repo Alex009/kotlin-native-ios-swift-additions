@@ -311,7 +311,6 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.icerock.moko.mvvm.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,7 +337,6 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.icerock.moko.mvvm.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";

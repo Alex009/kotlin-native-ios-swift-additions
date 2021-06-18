@@ -1,4 +1,4 @@
 language = Objective-C
 package = cocoapods.TestFramework
 modules = TestFramework
-linkerOpts = -framework TestFramework 
+linkerOpts = -framework TestFramework -rpath /usr/lib/swift
