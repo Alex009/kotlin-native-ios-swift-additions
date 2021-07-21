@@ -9,12 +9,14 @@ import SwiftUI
 import library
 import TestFramework
 
-let hello = MPLLiveData<NSString>(value: "hello")
+let hello = LiveData<NSString>()
 let test = SwiftAddition()
 
 struct ContentView: View {
     var body: some View {
       Button("Hi!") {
+        hello.stringLd()
+        hello.intLd()
         print(test.getValue())
       }
     }

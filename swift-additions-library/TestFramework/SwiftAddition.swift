@@ -14,26 +14,41 @@ public class SwiftAddition: NSObject {
   public func getValue() -> Int {
     return 9
   }
+  
+  @objc
+  public static var bindLiveData: ((Any) -> Void)? = nil
+  
+  @objc
+  public static func setBindLiveData(block: @escaping ((Any) -> Void)) {
+    SwiftAddition.bindLiveData = block
+  }
 }
 
-public class MPLLiveData<T> {
-  public init(value: T) {
-    
-  }
+//@objc
+//public class MPLLiveData<T>: NSObject {
+//  public init(value: T) {
+//
+//  }
+//
+//  func addObserverObserver(block: (T) -> Void) {
+//
+//  }
+//}
+
+@objc
+public class MyLiveData<T> {
   
-  func addObserverObserver(block: (T) -> Void) {
-    
-  }
 }
 
 public extension UILabel {
-  func bindLabel(liveData: MPLLiveData<NSString>) {
-    liveData.addObserverObserver { text in
-      if let text = text as String? {
-        self.text = text
-      } else {
-        self.text = "null observer"
-      }
-    }
+  func bindLabel(liveData: MyLiveData<NSString>) {
+    SwiftAddition.bindLiveData?(liveData)
+//    liveData.addObserverObserver { text in
+//      if let text = text as String? {
+//        self.text = text
+//      } else {
+//        self.text = "null observer"
+//      }
+//    }
   }
 }
