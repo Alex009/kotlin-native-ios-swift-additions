@@ -10,9 +10,12 @@ plugins {
 
 dependencies {
     implementation(gradleKotlinDsl())
-    implementation("com.squareup:kotlinpoet:1.6.0")
+    implementation("io.outfoxx:swiftpoet:1.1.0")
     implementation(files("libs/kotlinx-metadata-klib-1.5.20.jar"))
+    implementation("org.jetbrains.kotlin:kotlin-compiler-embeddable:1.5.20")
     compileOnly("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.20")
+
+    testImplementation(kotlin("test"))
 }
 
 java {
@@ -24,9 +27,9 @@ java {
 
 gradlePlugin {
     plugins {
-        create("swiftify") {
-            id = "dev.icerock.moko.swiftify"
-            implementationClass = "dev.icerock.moko.swiftify.plugin.SwiftifyPlugin"
+        create("kswift") {
+            id = "dev.icerock.moko.kswift"
+            implementationClass = "dev.icerock.moko.kswift.plugin.KSwiftPlugin"
         }
     }
 }

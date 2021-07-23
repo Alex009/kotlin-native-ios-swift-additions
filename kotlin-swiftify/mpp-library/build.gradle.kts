@@ -4,15 +4,17 @@
 
 plugins {
     kotlin("multiplatform")
-    id("dev.icerock.moko.swiftify")
+    kotlin("native.cocoapods")
+    id("dev.icerock.moko.kswift")
 }
 
+version = "0.1.0"
+
 kotlin {
-    iosX64("ios") {
-        binaries {
-            framework {
-                baseName = "library"
-            }
-        }
+    iosX64("ios")
+
+    cocoapods {
+        summary = "KSwift plugin sample"
+        homepage = "https://github.com/Alex009"
     }
 }

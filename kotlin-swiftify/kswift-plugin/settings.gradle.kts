@@ -17,8 +17,7 @@ dependencyResolutionManagement {
     repositories {
         mavenCentral()
         google()
-        mavenLocal()
     }
 }
 
-rootProject.name = "swiftify-plugin"
+rootProject.name = "kswift-plugin"

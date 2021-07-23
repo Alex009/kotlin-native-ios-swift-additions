@@ -1,0 +1,22 @@
+PODS:
+  - KSwift (0.1.0):
+    - mpp_library
+  - mpp_library (0.1.0)
+
+DEPENDENCIES:
+  - KSwift (from `../mpp-library`)
+  - mpp_library (from `../mpp-library`)
+
+EXTERNAL SOURCES:
+  KSwift:
+    :path: "../mpp-library"
+  mpp_library:
+    :path: "../mpp-library"
+
+SPEC CHECKSUMS:
+  KSwift: 6b99af4297302f4072ebd4c56f010fbe99f721e3
+  mpp_library: 9e3bda83a0947bb75c633c3a01a13008c8a15d8e
+
+PODFILE CHECKSUM: bd147b7fc0586834fe3391ceac1bb9c70f0668a7
+
+COCOAPODS: 1.10.0

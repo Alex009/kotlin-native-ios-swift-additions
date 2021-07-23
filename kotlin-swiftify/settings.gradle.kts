@@ -22,6 +22,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "moko-swiftify"
 
-includeBuild("swiftify-plugin")
+includeBuild("kswift-plugin")
 
 include(":mpp-library")

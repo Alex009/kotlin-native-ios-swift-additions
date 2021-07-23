@@ -8,6 +8,6 @@ buildscript {
     }
     dependencies {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.20")
-        classpath(":swiftify-plugin")
+        classpath(":kswift-plugin")
     }
 }
